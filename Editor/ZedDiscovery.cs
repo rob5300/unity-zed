@@ -25,7 +25,7 @@ namespace UnityZed
                 ("/usr/bin/zeditor", null),
 
                 // [Linux] (Official Website)
-                ("~/.local/bin/zed", null),
+                (NPath.HomeDirectory.Combine(".local/bin/zed"), null),
             };
 
             foreach (var candidate in candidates)
