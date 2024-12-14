@@ -24,7 +24,7 @@ namespace UnityZed
                 // [Linux] (Repo) 
                 ("/usr/bin/zeditor", null),
 
-                // [Linux] (Offical Website)
+                // [Linux] (Official Website)
                 ("~/.local/bin/zed", null),
             };
 
