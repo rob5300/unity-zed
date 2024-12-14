@@ -21,8 +21,11 @@ namespace UnityZed
                 // [Linux] (Flatpak)
                 ("/var/lib/flatpak/app/dev.zed.Zed/current/active/files/bin/zed", null),
 
-                // [Linux] 
+                // [Linux] (Repo) 
                 ("/usr/bin/zeditor", null),
+
+                // [Linux] (Offical Website)
+                ("~/.local/bin/zed", null),
             };
 
             foreach (var candidate in candidates)
