@@ -64,6 +64,19 @@ namespace UnityZed
                 }
             }
 
+#if UNITY_EDITOR_WIN
+            if(editorPath.ToLower().EndsWith("zed.exe"))
+            {
+                installation = new CodeEditor.Installation()
+                {
+                    Name = "Zed",
+                    Path = editorPath
+                };
+
+                return true;
+            }
+#endif
+
             installation = default;
             return false;
         }
