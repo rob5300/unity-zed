@@ -8,6 +8,8 @@ namespace UnityZed
 {
     public class ZedDiscovery
     {
+        public const string ZedName = "Zed";
+
         public CodeEditor.Installation[] GetInstallations()
         {
             var results = new List<CodeEditor.Installation>();
@@ -35,7 +37,7 @@ namespace UnityZed
 
                 if (candidatePath.FileExists())
                 {
-                    var name = new StringBuilder("Zed");
+                    var name = new StringBuilder(ZedName);
 
                     if (candidateTryGetVersion(candidatePath, out var version))
                         name.Append($" [{version}]");
@@ -69,7 +71,7 @@ namespace UnityZed
             {
                 installation = new CodeEditor.Installation()
                 {
-                    Name = "Zed",
+                    Name = ZedName,
                     Path = editorPath
                 };
 
